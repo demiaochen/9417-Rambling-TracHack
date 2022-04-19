@@ -112,7 +112,7 @@ def get_data():
     evaluate['operating_system'] = ['Android' if x == 'ANDROID' else x for x in evaluate['operating_system']]
     evaluate['operating_system'] = [x if x in remain else 'other' for x in evaluate['operating_system']]
 
-
+    # fill 'None' if there is missing value
     evaluate['language_preference'] = evaluate['language_preference'].fillna('None')
     evaluate['state'] = evaluate['state'].fillna('None')
     
