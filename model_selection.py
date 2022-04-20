@@ -22,7 +22,7 @@ from lightgbm import LGBMClassifier
 ################################################################################
 ##                        Import Preprocessed Data                            ##
 ################################################################################
-df = pd.read_csv("js_data2.csv")
+df = pd.read_csv("preprocessedData.csv")
 X= df.drop('ebb_eligible', axis=1)
 y= df['ebb_eligible']
 scaler = StandardScaler()
